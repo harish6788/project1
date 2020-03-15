@@ -10,8 +10,13 @@
 
 <%= form_for @user do |f| %>
   <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true, :autofocus => true %>
+  </fieldset>
+
+  <fieldset>
     <%= f.label :email %>
-    <%= f.email_field :email, :required => true, :autofocus => true %>
+    <%= f.email_field :email, :required => true %>
   </fieldset>
 
   <fieldset>

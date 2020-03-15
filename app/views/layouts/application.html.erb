@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to "Home", root_path %>
+      <% if @current_user.present? %>
+        <%= link_to "All users", users_path if @current_user.admin? %>
+        <%= link_to "Post an ad", new_list_path %>
+        <%= link_to "Sign out #{ @current_user.name }", login_path, :method => 'delete' %>
+      <% else %>
+        <%= link_to "Sign up", new_user_path %>
+        <%= link_to "log-in", login_path %>
+      <% end %>
+    </nav>
     <%= yield %>
   </body>
 </html>
