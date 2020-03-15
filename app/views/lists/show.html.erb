@@ -1,0 +1,14 @@
+<h1><%= @list.title %></h1>
+
+<%= image_tag @list.image, :class => 'feature', :alt => @list.title %>
+
+<ul>
+  <li>To: <%= @list.to %></li>
+  <li>Description: <%= @list.description %></li>
+  <li>Category: <%= @list.category.name %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to "Edit Ad" %>
+  <%= link_to "Delete Ad", @list, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

@@ -5,6 +5,10 @@ class ListsController < ApplicationController
       @list = List.new
     end
 
+    def index
+    @my_list = @current_user.lists.all
+    end
+
     def create
       list = List.create list_params
       @current_user.lists << list # Association
@@ -12,7 +16,11 @@ class ListsController < ApplicationController
       # One step alternative to the above:
       # @current_user.mixtapes.create mixtape_params
 
-      redirect_to root_path # IRL this would be: redirect_to mixtape
+      redirect_to list_path(list.id)
+    end
+
+    def show
+    @list = List.find params[:id]
     end
 
     private

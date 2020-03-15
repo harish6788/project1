@@ -1,8 +1,16 @@
 <h1>New Listing</h1>
 
-<%= form_for @listing do |f| %>
+<%= form_for @list do |f| %>
+  <%= f.label :to %>
+  <%= f.select(:to, options_for_select([["Buy","buy"],["Sell","sell"]])) %>
   <%= f.label :title %>
   <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  <%= f.label :category_id %>
+  <%= f.select :category_id, Category.pluck(:name, :id) %>
 
   <%= f.submit 'post Ad' %>
 <% end %>
