@@ -15,7 +15,17 @@ l1 = List.create :to => 'Sell', :title => 'Apple iphone', :description => 'Near 
 puts "#{ List.count } lists created"
 
 Category.destroy_all
-c1 = Category.create :name => 'Electronics'
+c1 = Category.create :name => 'Antiques & Art'
+c2 = Category.create :name => 'Baby & Children'
+c3 = Category.create :name => 'Books,Musics or Games'
+c4 = Category.create :name => 'Cars & Vehicles'
+c5 = Category.create :name => 'Clothing & Fashion'
+c6 = Category.create :name => 'Electronics'
+c7 = Category.create :name => 'Home & Garden'
+c8 = Category.create :name => 'Miscellaneous'
+c9 = Category.create :name => 'Real estate'
+c10 = Category.create :name => 'Sports'
+c11 = Category.create :name => 'Other'
 puts "#{ Category.count } categories created"
 
 # Associations ################

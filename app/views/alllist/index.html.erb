@@ -1,0 +1,4 @@
+<h1>All listings</h1>
+<% @alllist.each do |li| %>
+  <%= link_to(li.title, alllist_path(li.id)) %>
+<% end  %>

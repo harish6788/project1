@@ -1,0 +1,9 @@
+<h1><%= @list.title %></h1>
+
+<%= image_tag @list.image, :class => 'feature', :alt => @list.title if @list.image.present? %>
+
+<ul>
+  <li>To: <%= @list.to %></li>
+  <li>Description: <%= @list.description %></li>
+  <li>Category: <%= @list.category.name %></li>
+</ul>

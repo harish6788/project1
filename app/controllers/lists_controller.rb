@@ -12,10 +12,8 @@ class ListsController < ApplicationController
     def create
       list = List.create list_params
       @current_user.lists << list # Association
-
       # One step alternative to the above:
       # @current_user.mixtapes.create mixtape_params
-
       redirect_to list_path(list.id)
     end
 
