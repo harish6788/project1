@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'lists/edit'
   root :to => 'pages#home'
   resources :users, :only => [:new, :create, :index]
 
