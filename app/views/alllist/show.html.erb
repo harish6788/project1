@@ -1,9 +1,18 @@
 <h1><%= @list.title %></h1>
 
+<% if @list.to == "Sell" then @a = "Seller" else @a = "Buyer"%>
+<% end %>
+<% @message = "login to contact #{@a}" %>
+
 <%= image_tag @list.image, :class => 'feature', :alt => @list.title if @list.image.present? %>
 
 <ul>
   <li>To: <%= @list.to %></li>
   <li>Description: <%= @list.description %></li>
   <li>Category: <%= @list.category.name %></li>
+  <% if @current_user.present? %>
+    <li> Contact <%= @a + @list.user.email + @list.user.phone %></li>
+  <% else %>
+    <%= link_to @message, login_path %>
+  <% end %>
 </ul>
