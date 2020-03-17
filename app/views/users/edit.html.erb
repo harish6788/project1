@@ -1,6 +1,4 @@
-<h1>Sign up!</h1>
-
-<%= form_for @user do |f| %>
+<%= form_for @current_user do |f| %>
   <fieldset>
     <%= f.label :name %>
     <%= f.text_field :name, :required => true, :autofocus => true %>
@@ -26,13 +24,5 @@
     <%= f.password_field :password_confirmation, :required => true %>
   </fieldset>
 
-  <%= f.submit 'Sign Up..!' %>
-<% end %>
-
-<% if @user.errors.any? %>
-  <ol>
-    <% @user.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-  </ol>
+  <%= f.submit 'Update details' %>
 <% end %>

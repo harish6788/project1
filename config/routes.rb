@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'lists/edit'
+  # get 'users/edit'
+  # get 'users/show'
+  # get 'lists/edit'
   root :to => 'pages#home'
-  resources :users, :only => [:new, :create, :index]
+  resources :users
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'
