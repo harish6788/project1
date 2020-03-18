@@ -7,7 +7,6 @@ body{
   background-color:white;
 }
 .lis{
-  font-family: 'Baloo Chettan 2', cursive;
   margin: 0 auto;
   text-align: center;
 }
@@ -48,4 +47,8 @@ fieldset{
   height:15%;
   box-shadow:5px 2px;
   border-radius: 4px;
+}
+.thumb{
+  width:20%;
+  max-height: 30em;
 }
