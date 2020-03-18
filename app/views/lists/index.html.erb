@@ -1,6 +1,7 @@
 <h1><%= "#{@current_user.name}'s Ads"  %> </h1>
 
 <% @my_list.each do |ad| %>
-  <h2><%= ad.title %></h2>
-  <%= link_to image_tag(ad.image, :class => 'thumb', :alt => ad.title), list_path(ad.id) %>
+  <h2><%= link_to ad.title, list_path(ad.id) %></h2>
+  <%= image_tag ad.image, :class => 'thumb', :alt => ad.title if ad.image.present? %>
+
 <% end %>
