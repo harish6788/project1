@@ -18,6 +18,7 @@ nav{
   height: 2em;
   text-align: center;
   padding: 1em;
+  border-radius: 7px;
 }
 
 nav a{
@@ -25,4 +26,11 @@ nav a{
   vertical-align: middle;
   font-size: 20px;
   color:white;
+}
+
+a:hover{
+  color:red;
+}
+h1{
+  font-family: 'Baloo Chettan 2', cursive;
 }
