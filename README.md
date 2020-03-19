@@ -1,24 +1,36 @@
-# README
+# Project name
+MyNeemtree v1.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Table of contents
 
-* Ruby version
+* [LiveDemoLink](#LiveDemoLink)
+* [Description](#Description)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [status](#status)
+* [WishList](#WishList)
+* [Contact](#contact)
 
-* System dependencies
+## LiveDemoLink
+[LiveDemoLink](https://myneemtree.herokuapp.com/)
 
-* Configuration
+## Description
+This is a simple website of local Ad listings that I have created using rails 5.2.4.1. In this site user can sign up for a account, login and post, edit or delete their Ads. All their ads are available to see for normal website visitors and its users as well.
 
-* Database creation
+## Screenshots
+![site screenshot](./images/mnt.png)
 
-* Database initialization
+## Technologies
+[Ruby on rails ](https://rubyonrails.org/)
 
-* How to run the test suite
+## Status
+Project is: _in progress_
 
-* Services (job queues, cache servers, search engines, etc.)
+## WishList
+* Image upload
+* Enhanced styling
+* More models and data filter
 
-* Deployment instructions
-
-* ...
+## Contact
+Created by [@Harish](vvpdharish@gmail.com) - feel free to contact me!
